@@ -9,7 +9,9 @@
  function showerror(){
  	if(document.terms.accept.checked == false){
 		document.getElementById("error").style.visibility = "visible";
-		}
+	} else {
+		document.forms["terms"].submit();
+	}
  }
 </script>
 <body id="login">
