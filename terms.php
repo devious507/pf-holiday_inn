@@ -60,7 +60,10 @@
     </div>
     <div id="access">
       <p class="error" id="error">Please accept the Terms &amp; Conditions and check the access code.</p>
-      <form name="terms" id="terms">
+      <form name="terms" id="terms" method="get" action="captiveportal-action.php">
+      <input type="hidden" name="redirurl" value="<?php echo $_GET['redirurl']; ?>">
+      <input type="hidden" name="portalaction" value="<?php echo $_GET['portalaction']; ?>">
+
         <table width="586" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td align="left" width="30" valign="top"><input name="accept" type="checkbox" /></td>
