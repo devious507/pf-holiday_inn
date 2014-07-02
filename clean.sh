@@ -5,3 +5,4 @@ rm ../*.gif
 rm ../*.php
 rm ../*.css
 rm ../*.html
+rm ../*.txt
